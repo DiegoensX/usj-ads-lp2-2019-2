@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Calculadora</title>
+</head>
+
+	<body>
+		<h1>Calculadora</h1>
+		<p>Insira o Primeiro Número: <input type="number" id="a" /> </p>
+		<p>Insira o Segundo Número: <input type="number" id="b" /> </p>
+		<button onclick="somar()">Somar (+)</button>
+		<button onclick="subtrair()">Subtrair (-)</button>
+		<button onclick="dividir()">Dividir (/)</button>
+		<button onclick="vezes()">Multiplicar (*)</button>
+		
+		<p>Resultado: <input type="number" id="resultado" readonly /></p>
+
+		<script>
+		function somar() {
+			var a = Number (document.getElementById('a').value);
+			var b = Number (document.getElementById('b').value);
+
+			var resultado = document.getElementById('resultado');
+				resultado.value = a + b;
+		}
+
+		
+		function subtrair() {
+			var a = Number (document.getElementById('a').value);
+			var b = Number (document.getElementById('b').value);
+
+			var resultado = document.getElementById('resultado');
+				resultado.value = a - b;
+		}
+	
+		function dividir() {
+			var a = Number (document.getElementById('a').value);
+			var b = Number (document.getElementById('b').value);
+
+			var resultado = document.getElementById('resultado');
+				resultado.value = a / b;
+		}
+
+		function vezes() {
+			var a = Number (document.getElementById('a').value);
+			var b = Number (document.getElementById('b').value);
+
+			var resultado = document.getElementById('resultado');
+				resultado.value = a * b;
+		}
+		</script> 
+	</body>
+
+</html>
